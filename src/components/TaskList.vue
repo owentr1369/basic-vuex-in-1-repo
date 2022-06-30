@@ -1,7 +1,17 @@
 <template>
   <div>
     <h1>Task list</h1>
-    <h3 v-for="(task, index) in tasks" :key="index">{{ task.name }}</h3>
+    <div v-for="(task, index) in tasks" :key="index">
+      <input
+        :id="index"
+        type="checkbox"
+        :checked="task.done"
+        v-model="task.done"
+      />
+      <label :for="index" :class="task.done ? 'done' : ''">{{
+        task.name
+      }}</label>
+    </div>
   </div>
 </template>
 
