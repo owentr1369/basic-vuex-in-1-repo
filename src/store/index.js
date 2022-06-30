@@ -17,6 +17,11 @@ export default new Vuex.Store({
       state.name = name;
     },
   },
-  actions: {},
+  actions: {
+    udpateProfile(context) {
+      //context là store ở trạng thái khởi điểm khi chạy hàm
+      context.commit("setName", "Ronaldo Siuuuuuuu");
+    },
+  },
   modules: {},
 });

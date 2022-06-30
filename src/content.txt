@@ -1,0 +1,11 @@
+React: Redux ~ VueJS: VueX
+
+Store: 
+    + state: Nơi lưu trữ các trạng thái của ứng dụng
+    + getters:  Là những hàm lấy ra các state
+                mapGetters đặt trong computed
+    + mutations:    Là những hàm để thay đổi state 
+                    mapMutations đặt trong method
+    + actions:  Từ component sẽ gọi đến action, action gọi mutaion để thay đổi state
+                mapActions đặt trong method
+                Xử lý state bên trong store, gọi hàm commit
