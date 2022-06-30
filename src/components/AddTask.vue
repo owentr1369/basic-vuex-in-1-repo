@@ -1,5 +1,8 @@
 <template>
-  <div>Task</div>
+  <div>
+    <input type="text" name="" id="" placeholder="Task Name" />
+    <button>Add task</button>
+  </div>
 </template>
 
 <script>
