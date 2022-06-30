@@ -13,15 +13,20 @@
       }}</label>
     </div>
     <h1>{{ getName }}</h1>
+    <button @click="setName('Hello')">Thay doi ten</button>
   </div>
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters, mapMutations } from "vuex";
 export default {
   props: ["tasks"],
   computed: {
     ...mapGetters(["getName"]),
+  },
+  methods: {
+    ...mapMutations(["setName"]),
+    // lấy setName từ mutaions của store về this
   },
 };
 </script>

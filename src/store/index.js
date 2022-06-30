@@ -12,7 +12,11 @@ export default new Vuex.Store({
       return state.name;
     },
   },
-  mutations: {},
+  mutations: {
+    setName(state, name) {
+      state.name = name;
+    },
+  },
   actions: {},
   modules: {},
 });
