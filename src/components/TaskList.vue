@@ -12,13 +12,17 @@
         task.name
       }}</label>
     </div>
-    <h1>{{ $store.state.name }}</h1>
+    <h1>{{ getName }}</h1>
   </div>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 export default {
   props: ["tasks"],
+  computed: {
+    ...mapGetters(["getName"]),
+  },
 };
 </script>
 

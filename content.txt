@@ -1,0 +1,7 @@
+React: Redux ~ VueJS: VueX
+
+Store: 
+    + state: Nơi lưu trữ các trạng thái của ứng dụng
+    + getters:  Là những hàm lấy ra các state
+                mapGetters
+

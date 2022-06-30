@@ -7,7 +7,11 @@ export default new Vuex.Store({
   state: {
     name: "Lap trinh",
   },
-  getters: {},
+  getters: {
+    getName(state) {
+      return state.name;
+    },
+  },
   mutations: {},
   actions: {},
   modules: {},
